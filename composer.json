@@ -1,0 +1,25 @@
+{
+    "name": "mono-page/%package%",
+    "description": "",
+    "keywords": [],
+    "homepage": "https://github.com/mono-page/%package%",
+    "type": "library",
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monopage\\%Package%\\": "source"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v0.0.1-dev"
+        }
+    },
+    "repositories": []
+}
