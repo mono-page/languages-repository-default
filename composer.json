@@ -1,15 +1,19 @@
 {
-    "name": "mono-page/%package%",
+    "name": "mono-page/languages-repository-default",
     "description": "",
     "keywords": [],
-    "homepage": "https://github.com/mono-page/%package%",
+    "homepage": "https://github.com/mono-page/languages-repository-default",
     "type": "library",
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "doctrine/orm": "^2.7",
+        "mono-page/contracts": "^v0.0.1@dev",
+        "mono-page/domain": "^v0.0.1@dev",
+        "mono-page/languages": "^v0.0.1@dev"
     },
     "autoload": {
         "psr-4": {
-            "Monopage\\%Package%\\": "source"
+            "Monopage\\Languages\\Repositories\\": "source"
         }
     },
     "config": {
@@ -21,5 +25,18 @@
             "dev-master": "v0.0.1-dev"
         }
     },
-    "repositories": []
+    "repositories": [
+        {
+            "type": "git",
+            "url": "/home/iiifx/MonoPage/contracts"
+        },
+        {
+            "type": "git",
+            "url": "/home/iiifx/MonoPage/domain"
+        },
+        {
+            "type": "git",
+            "url": "/home/iiifx/MonoPage/languages"
+        }
+    ]
 }

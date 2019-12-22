@@ -1,1 +1,1 @@
-# Monopage/%Package%
+# Monopage/LanguagesRepositoryDefault
